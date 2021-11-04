@@ -76,6 +76,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   
+    
     // pass in req.body instead to only update what's passed throught
     User.update(req.body, {
       individualHooks: true,
